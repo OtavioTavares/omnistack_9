@@ -1,0 +1,33 @@
+ul.spot-list {
+    width: 100%; /* Largura */
+    list-style: none; /* Retira as bolinhas em topicos */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Colocando os spots em coluna e cada 1fr é a quantidade por linha*/
+    grid-gap: 20px; /* Espaçamento entre as colunas de 20px */
+    margin-bottom: 30px;
+}
+
+/* Quero que cada inf fique uma abaixo da outra */
+
+ul.spot-list li{
+    display: flex;
+    flex-direction: column;
+}
+
+ul.spot-list li header{
+    width: 100%; /* Largura */
+    height: 120px; /* Altura */
+    background-size: cover; /* LPara que a imagem ocupe todo o espaço definido acima */
+    border-radius: 4px;
+}
+
+ul.spot-list li strong{
+    margin-top: 10px;
+    font-size: 24px;
+    color: #444;
+}
+
+ul.spot-list li span{
+    font-size: 15px;
+    color: #999;
+}
